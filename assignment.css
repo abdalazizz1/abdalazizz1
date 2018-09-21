@@ -1,0 +1,104 @@
+
+/*Background Animation*/
+body{
+	background: linear-gradient(132deg,#076585,#fff);
+	background-size:400% 400%;
+	animation: BackgroundGradient 15s ease infinite;
+
+}
+
+
+@keyframes BackgroundGradient{
+	0% {background-position: 0% 50%;}										
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+
+/*Titles*/
+h1{
+	position:absolute;
+	top:100px;
+	left:150px;
+	color:black;
+ 	font-family: "Century Gothic";
+ 	font-size: 1.5em;
+ 	text-align: center;
+ 	text-align:left;
+ 	font-weight:400;
+ 	margin:0px
+ 	padding:0px;
+
+ 	}	
+
+/*paragrahs properties*/
+p{
+
+ 	font-style: italic
+ 	color:red;
+ 	text-align:center
+ }
+
+/*Bullets left alligned*/
+.common{
+	text-align: left;
+}
+
+ 
+
+ 	
+/*Responsive site*/
+ @media(min-width: 128em){
+ 	.box{
+ 			max-width:123em;
+ 		}
+
+ 	
+article{
+ 		width:100%;
+ 	}
+
+.profile-pic img{
+
+	height:80px;
+	width:80px;
+	border-radius:600px;
+	bottom:30px;
+	right:600px;
+	z-index:1;
+	}
+
+ }
+/*images with flex*/
+ 
+#container{
+
+	height:100px;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	}
+
+ .profile-pic img{
+
+	height:80px;
+	width:80px;
+	border-radius:600px;
+	bottom:30px;
+	right:600px;
+	z-index:1;
+	}
+	
+ .box{
+	height:320px;
+ 	margin:5px;
+ 	position:absolute;
+ 	text-align:center;
+ 	color:black;
+ 	justify-content: center;
+ 	font-family:"Century Gothic";
+ 	top:150px;
+ 	left:5px;
+ 	}
